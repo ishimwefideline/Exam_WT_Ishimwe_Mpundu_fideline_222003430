@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Career Development Workshop Platform - Home</title>
+    <style>
+        /* General styling */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('d1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+        }
+
+        /* Header styling */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: teal;
+            border-bottom: 5px solid black;
+            flex-wrap: wrap;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+            margin-right: 10px; /* Reduce the margin to decrease the gap */
+        }
+        .header h3 {
+            color: white;
+            margin: 0;
+            text-align: left; /* Align text to the left */
+            flex-grow: 1;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .navigation li {
+            margin-right: 10px;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 3px;
+        }
+        .navigation li a:hover {
+            background-color: deeppink;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input[type="search"] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+            border-radius: 3px;
+        }
+        .search-bar button {
+            padding: 6px 10px;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            background-color: #ddd;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        .search-bar button:hover {
+            background-color: #ccc;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: deeppink;
+            min-width: 120px;
+            z-index: 1;
+            border-radius: 3px;
+        }
+        .dropdown-contents a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .dropdown-contents a:hover {
+            background-color: red;
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+
+        /* Main content styling */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Adding opacity to background */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            color: darkolivegreen;
+        }
+        .container p {
+            color: #333;
+        }
+        /* Button styling */
+        .button {
+            display: inline-block;
+            background-color: blueviolet;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #8a2be2;
+        }
+        /* Footer styling */
+        footer {
+            background-color: teal;
+            text-align: center;
+            width: 100%;
+            height: 70px;
+            color: white;
+            font-size: 25px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <img class="logo" src="logo2.jpg" alt="Logo">
+        <h3>ONLINE CAREER DEVELOPMENT<br> WORKSHOP PLATFORM</h3>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_Us.html">About Us</a></li>
+            <li><a href="contact_Us.html">Contact Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li class="dropdown">
+                <a href="#">Forms</a>
+                <div class="dropdown-contents">
+                    <a href="attendees.php">Attendees</a>
+                    <a href="categories.php">Categories</a>
+                    <a href="enrollments.php">Enrollments</a>
+                    <a href="instructors.php">Instructors</a>
+                    <a href="notifications.php">Notifications</a>
+                    <a href="payments.php">Payments</a>
+                    <a href="resources.php">Resources</a>
+                    <a href="reviews.php">Reviews</a>
+                    <a href="workshops.php">Workshops</a>
+                     <a href="courses.php">courses</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">View_Tables</a>
+                <div class="dropdown-contents">
+                    <a href="attendees_view.php">Attendees view</a>
+                    <a href="categories_view.php">Categories view</a>
+                    <a href="enrollments_view.php">Enrollments view</a>
+                    <a href="instructors_view.php">Instructors view</a>
+                    <a href="notifications_view.php">Notifications view</a>
+                    <a href="payments_view.php">Payments view</a>
+                    <a href="resources_view.php">Resources view</a>
+                    <a href="reviews_view.php">Reviews view</a>
+                    <a href="workshops_view.php">Workshops view</a>
+                    <a href="courses_view.php">courses view</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Settings</a>
+                <div class="dropdown-contents">
+                    <a href="login.html">Login</a>
+                    <a href="registration.html">Registration</a>
+                    <a href="logout.php">Logout</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search-bar">
+            <form action="search.php" method="GET">
+                <input type="search" name="query" placeholder="Search here" />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<section>
+    <center>
+        <marquee><p style="font-weight: bold;font-size: 25px;align-items: center;color: blue;"><i>WELCOME TO THE ONLINE CAREER DEVELOPMENT WORKSHOP PLATFORM</i></p></marquee>
+    </center>
+    <div class="container">
+        <h1>Welcome to our Online Career Development Workshop Platform</h1>
+        <p>Expand your skills and advance your career with our diverse range of workshops.</p>
+        <p>Get started now by exploring our upcoming workshops:</p>
+    </div>
+</section>
+<center>
+    <a href="list of all courses.html" class="button">View available courses</a>
+</center>
+<footer>
+    <p>Designed by Fideline Mpundu Ishimwe_222003430 &copy; YEAR TWO BIT GROUP A &reg; 2024</p>
+</footer>
+
+</body>
+</html>
